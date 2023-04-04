@@ -14,12 +14,7 @@
 
 ### Стэк, используемый в проекте:
 
-Python 3.11
-Django 3.2.16
-Django Rest Framework 3.12.4
-Simple JWT 4.7.2
-Djoser 2.1.0
-Pillow 9.3.0.
+Python 3.11, Django 3.2.16, Django Rest Framework 3.12.4, Simple JWT 4.7.2, Djoser 2.1.0, Pillow 9.3.0.
 
 ### Как запустить проект:
 
