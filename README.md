@@ -218,7 +218,7 @@ POST-запрос к api/v1/follow
 
 ```
 {
-  "refresh": "string",
-  "access": "string"
+  "user": "string",
+  "following": "string"
 }
 ```
