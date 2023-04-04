@@ -1,5 +1,5 @@
 from django.shortcuts import get_object_or_404
-from rest_framework import viewsets, pagination
+from rest_framework import viewsets, pagination, mixins
 from rest_framework.filters import SearchFilter
 
 from posts.models import Post, Group, Comment, Follow
@@ -42,7 +42,9 @@ class CommentViewSet(viewsets.ModelViewSet):
         serializer.save(author=self.request.user, post=post)
 
 
-class FollowViewSet(viewsets.ModelViewSet):
+class FollowViewSet(viewsets.GenericViewSet,
+                    mixins.ListModelMixin,
+                    mixins.CreateModelMixin):
     queryset = Follow.objects.select_related('user')
     serializer_class = FollowSerializer
     permission_classes = (IsAuthenticated,)
