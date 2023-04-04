@@ -146,6 +146,8 @@ GET, PUT, PATCH-запрос к api/v1/posts/1
 }
 ```
 
+
+
 GET-запрос к api/v1/posts/1/comments
 
 ```
@@ -160,7 +162,7 @@ GET-запрос к api/v1/posts/1/comments
 ]
 ```
 
-POST-запрос к api/v1/posts/1/comments/
+POST-запрос к api/v1/posts/1/comments
 
 ```
 {
@@ -184,6 +186,8 @@ GET, PUT, PATCH-запрос к api/v1/posts/1/comments/1
 }
 ```
 
+
+
 GET-запрос к api/v1/groups
 
 ```
@@ -196,6 +200,8 @@ GET-запрос к api/v1/groups
   }
 ]
 ```
+
+
 
 GET-запрос к api/v1/follow
 
